@@ -79,3 +79,7 @@ body {
 .profile-options a:hover {
     background-color: #555;
 }
+
+.navbarSupportedContent{
+    margin-left: auto;
+}
