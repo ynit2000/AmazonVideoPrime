@@ -107,4 +107,35 @@ header > img {
 
 }
 
+.text-over-image > p:nth-child(4){
+
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 12px;
+}
+
+.text-over-image > button {
+    width: 280px;
+    background-color: #0f79af;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.section-containing-h1 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
