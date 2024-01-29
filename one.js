@@ -1,28 +1,30 @@
 var favChannels = [
-    { img_url: "/Amazon/media/LionsgatePlay.jpg" },
-    { img_url: "/Amazon/media/Discovery.jpg" },
-    { img_url: "/Amazon/media/BBC_PLAYER.png" },
-    { img_url: "/Amazon/media/MANORAMAMAX.jpg" },
-    { img_url: "/Amazon/media/hoichoi.jpg" },
-    { img_url: "/Amazon/media/Chaupal.png" },
-    { img_url: "/Amazon/media/Anime.jpg" },
-    { img_url: "/Amazon/media/Erosnow.jpg" },
-    { img_url: "/Amazon/media/Mubi.jpg" },
-    { img_url: "/Amazon/media/Vrott.png" },
-    { img_url: "/Amazon/media/Stingray.png" },
-    { img_url: "/Amazon/media/Docubay.jpg" },
+    { img_url: "/media/LionsgatePlay.jpg" },
+    { img_url: "/media/Discovery.jpg" },
+    { img_url: "/media/BBC_PLAYER.png" },
+    { img_url: "/media/MANORAMAMAX.jpg" },
+    { img_url: "/media/hoichoi.jpg" },
+    { img_url: "/media/Chaupal.png" },
+    { img_url: "/media/Anime.jpg" },
+    { img_url: "/media/Erosnow.jpg" },
+    { img_url: "/media/Mubi.jpg" },
+    { img_url: "/media/Vrott.png" },
+    { img_url: "/media/Stingray.png" },
+    { img_url: "/media/Docubay.jpg" },
 ];
 
-favChannels.map(function (elem) {
-    var div = document.createElement('div');
-    div.setAttribute("class", "channelDiv");
+document.addEventListener("DOMContentLoaded", function () {
+    // Your existing code here
+    favChannels.map(function (elem) {
+        var div = document.createElement("div");
+        div.setAttribute("class", "channelDiv");
 
-    var image = document.createElement('img');
-    image.setAttribute("src", elem.img_url);
+        var image = document.createElement('img');
+        image.setAttribute("src", elem.img_url);
 
-    div.append(image);
-    document.querySelector(".channelBtn").append(div);
+        div.append(image);
+        document.querySelector(".channelBtn").append(div);
+    });
 
+    localStorage.setItem("favChannels", JSON.stringify(favChannels));
 });
-
-localStorage.setItem("favChannels", JSON.stringify(favChannels));
