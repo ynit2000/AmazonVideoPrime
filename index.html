@@ -4,67 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Amazon Prime Video Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6a984d63f.js" crossorigin="anonymous"></script>
+    <title>Welcome to Prime Video</title>
 </head>
 
-<body>
+<body style="background-color: black;">
+
+    <!-- navigation-start  -->
+    <nav>
+        <div class="logo">
+            <img src="media/Logo-min.png" alt="logo">
+        </div>
+    </nav>
+
+    <div class="right-menu">
+        <a href="">
+            <i class="fas fa-globe"></i>
+            <label for="lang">EN</label>
+            <i class="fas fa-caret-down lang-btn"></i>
+        </a>
+        <a href="">Sign In</a>
+    </div>
+    <!-- navigation-end  -->
+
+    <!-- main-content-start  -->
 
     <header>
-        <!-- Header content, logo, navigation, etc. -->
+        <img src="media/main-bg.jpg" alt="poster">
+        <div class="text-over-image">
+            <h1>Welcome to Prime Video</h1>
+            <p>Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+            <button type="submit">Sign in to join Prime</button>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Home</a></li>
-                        <li><a class="dropdown-item" href="#">Store</a></li>
-                        <li><a class="dropdown-item" href="#">Live TV</a></li>
-                        <li><a class="dropdown-item" href="#">Categories</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                    </ul>
-                </a>
-                <a class="navbar-brand" href="#" id="search" >prime video</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-                
-            </div>
-        </nav>
-        <div class="bg-img">
-            <img src="media/main-bg.jpg" alt="">
         </div>
+    </header>
+    <header>
+        <img src="media/section_1.jpg" alt="poster">
+        <div class="text-over-image">
+            <h1>Movie rentals on Prime Video</h1>
+            <p>Early Access to new movies, before digital subscription</p>
+            <button type="submit">Rent now</button>
 
+        </div>
+    </header>
+    <section>
+        <div class="section">
+            <h1>Your favorite channels all in one place</h1>
+            <p>With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice</p>
+
+        </div>
+        <div class="channelBtn"></div>
+
+    </section>
+    <header>
+        <img src="media/section_3.jpg" alt="poster">
+        <div class="text-over-image">
+            <h1>Even better with Fire TV Stick</h1>
+            <p>The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.</p>
+            <button type="submit">Get started</button>
+
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <!-- Hero section content, banner image, etc. -->
-        </section>
 
-        <section class="featured">
-            <!-- Featured content, movie/show thumbnails, etc. -->
-        </section>
-
-        <section class="categories">
-            <!-- Categories section, genres, etc. -->
-        </section>
-    </main>
+    <!-- main-content-end  -->
 
     <footer>
         <!-- Footer content, links, etc. -->
     </footer>
 
-    <script src="one.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="one.js"></script>
 
 </html>
