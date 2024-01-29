@@ -15,16 +15,32 @@ var favChannels = [
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your existing code here
-    favChannels.map(function (elem) {
+  
+    var channelBtn = document.querySelector(".channelBtn");
+
+    favChannels.forEach(function (elem, index) {
         var div = document.createElement("div");
         div.setAttribute("class", "channelDiv");
+       
 
         var image = document.createElement('img');
         image.setAttribute("src", elem.img_url);
+        
 
         div.append(image);
-        document.querySelector(".channelBtn").append(div);
+        
+        
+        // Add a 10px space after each image except for the last one
+        if (index < favChannels.length - 1) {
+            var space = document.createElement('div');
+            
+            div.append(space);
+        }
+
+        channelBtn.append(div);
     });
 
     localStorage.setItem("favChannels", JSON.stringify(favChannels));
+    space.style.width = "10px";
 });
+
